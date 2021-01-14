@@ -1,0 +1,98 @@
+body {
+    background-color :#E6EFF6; 
+    font-family: 'Karla', sans-serif ; 
+    font-weight: 300;
+
+}
+  
+p {
+    color : hsl(218, 22%, 67%) ;
+}
+
+
+.container {
+    background-color : white ;
+
+    height : 20em ; 
+    width : 38em ;
+    display : grid ;
+    grid-template-rows : 1fr 1fr ;
+    grid-template-columns : 1fr 1fr ;
+    grid-template-areas : "div1 div1" "div2 div3" ; 
+    margin-top: 10%;
+    margin-left: 32%;
+    /* border-radius: 20%; */
+    
+   
+}
+
+.div1 {
+    grid-area : div1;
+    background-color : white ;
+    padding : 37px ; 
+    border-radius: 5% ; 
+   
+}
+.div2 {
+    grid-area : div2;
+    background-color : #2BB3B1 ;
+    padding : 15px ; 
+    /* border-radius: 5%; */
+    
+}
+.div3 {
+    grid-area : div3;
+    background-color : #4ABEBD ;
+    padding : 15px ; 
+    /* border-radius: 5%; */
+
+}
+
+.div2 >p {
+    color : hsl(204, 43%, 93%);
+    
+}
+
+.div3 >p {
+    color : hsl(204, 43%, 93%);
+}
+
+@media only screen and (max-width:550px) {
+    .container {
+    display : grid ;
+    grid-template-columns : 1fr ;
+    grid-template-rows : 1fr 1fr 1fr;
+    grid-template-areas : "div1" "div2" "div3" ; 
+    margin: 0;
+    }
+    
+}
+
+#heading {
+    color :hsl(179, 62%, 43%) ; 
+    font-weight: 700;
+}
+#heading2 {
+    color : hsl(71, 73%, 54%) ; 
+    font-weight: 300;
+}
+
+h2 {
+    color : white ; 
+}
+
+button {
+    height: 3em;
+    width: 17em;
+    background-color :hsl(71, 73%, 54%) ;
+    padding: -10px;
+    font-size: 15px;
+}
+
+span {
+    font-size: 35px;
+}
+
+#para {
+    padding-left: 25px;
+}
